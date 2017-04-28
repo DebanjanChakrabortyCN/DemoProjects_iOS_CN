@@ -32,5 +32,57 @@ class TestAlamofireTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
+    func testDataTaskFunction(){
+        
+        var promise :XCTestExpectation? = expectation(description: "Data Received properly")
+        var resultCheck: Any?
+        var responseError: Error?
+        
+        self.measure {
+            ConnectionManager.fetchNews{ (resultData, error) in
+                
+                resultCheck = resultData
+                responseError = error
+                
+                if(resultCheck != nil && responseError == nil)
+                {
+                    promise?.fulfill()
+                    promise = nil
+                }
+            }
+        }
+        
+        
+        self.waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssertNil(responseError,"There is an error \(String(describing: responseError))")
+        
+        XCTAssertNotNil(resultCheck, "There is no data received")
+    }
+    
+    func testDownloadFile(){
+        
+        var promise :XCTestExpectation? = expectation(description: "Data Received properly")
+        var resultCheck: Any?
+        var responseError: Error?
+        
+        ConnectionManager.downloadFile(urlString: "https://i2.cdn.cnn.com/cnnnext/dam/assets/170426173540-100-days-that-changed-america-image-1-super-tease.jpg", fileName: nil, downloadFilePath: "") { (resultData, err) in
+            
+            resultCheck = resultData
+            responseError = err
+            
+            if(resultCheck != nil && responseError == nil)
+            {
+                promise?.fulfill()
+                promise = nil
+            }
+            
+        }
+        
+        self.waitForExpectations(timeout: 300, handler: nil)
+        
+        print(resultCheck as Any)
+    }
     
 }
