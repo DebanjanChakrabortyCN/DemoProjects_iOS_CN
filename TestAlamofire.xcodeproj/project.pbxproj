@@ -38,6 +38,9 @@
 		788CDB521EB21A3A00C18383 /* CustomFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CDB511EB21A3A00C18383 /* CustomFileManager.swift */; };
 		788CDB531EB21A3A00C18383 /* CustomFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CDB511EB21A3A00C18383 /* CustomFileManager.swift */; };
 		788CDB541EB21A3A00C18383 /* CustomFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CDB511EB21A3A00C18383 /* CustomFileManager.swift */; };
+		789429411EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */; };
+		789429421EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */; };
+		789429431EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */; };
 		7A5509D6487F97749A1DDF27 /* Pods_TestAlamofireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ABDAA827494274ECDA1D60 /* Pods_TestAlamofireTests.framework */; };
 		B18C7CA26762906F5EBC7D27 /* Pods_TestAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA701E3117FE4D9E4815E30D /* Pods_TestAlamofire.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +85,7 @@
 		788CDB451EB1FD2300C18383 /* ConnectionManager+CancelTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ConnectionManager+CancelTask.swift"; path = "ConnectionManager/ConnectionManager+CancelTask.swift"; sourceTree = "<group>"; };
 		788CDB461EB1FD2300C18383 /* ConnectionManager+FetchNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ConnectionManager+FetchNews.swift"; path = "ConnectionManager/ConnectionManager+FetchNews.swift"; sourceTree = "<group>"; };
 		788CDB511EB21A3A00C18383 /* CustomFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomFileManager.swift; path = FileManager/CustomFileManager.swift; sourceTree = "<group>"; };
+		789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ConnectionManager+DownloadTask.swift"; path = "ConnectionManager/ConnectionManager+DownloadTask.swift"; sourceTree = "<group>"; };
 		AB7A3F1B1E37E8305ADF3D04 /* Pods-TestAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAlamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAlamofire/Pods-TestAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		BA701E3117FE4D9E4815E30D /* Pods_TestAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7ABDAA827494274ECDA1D60 /* Pods_TestAlamofireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAlamofireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +213,7 @@
 				788CDB441EB1FD2300C18383 /* ConnectionManager.swift */,
 				788CDB451EB1FD2300C18383 /* ConnectionManager+CancelTask.swift */,
 				788CDB461EB1FD2300C18383 /* ConnectionManager+FetchNews.swift */,
+				789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */,
 			);
 			name = ConnectionManager;
 			sourceTree = "<group>";
@@ -296,6 +301,11 @@
 					785B12AE1EA766AE008A8433 = {
 						CreatedOnToolsVersion = 8.3.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					785B12C21EA766AF008A8433 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -456,6 +466,7 @@
 			files = (
 				785B12B51EA766AE008A8433 /* ViewController.swift in Sources */,
 				7854FFD71EAA111B009E591D /* NewsTableViewCell.swift in Sources */,
+				789429411EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */,
 				788CDB4D1EB1FD2300C18383 /* ConnectionManager+FetchNews.swift in Sources */,
 				785B12B31EA766AE008A8433 /* AppDelegate.swift in Sources */,
 				788CDB471EB1FD2300C18383 /* ConnectionManager.swift in Sources */,
@@ -479,6 +490,7 @@
 				788CDB411EB1FCC400C18383 /* Strings+CustomFunctions.swift in Sources */,
 				788CDB531EB21A3A00C18383 /* CustomFileManager.swift in Sources */,
 				7854FFD81EAA111B009E591D /* NewsTableViewCell.swift in Sources */,
+				789429421EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */,
 				785B12C81EA766AF008A8433 /* TestAlamofireTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +507,7 @@
 				788CDB421EB1FCC400C18383 /* Strings+CustomFunctions.swift in Sources */,
 				788CDB541EB21A3A00C18383 /* CustomFileManager.swift in Sources */,
 				7854FFD91EAA111B009E591D /* NewsTableViewCell.swift in Sources */,
+				789429431EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */,
 				785B12D31EA766AF008A8433 /* TestAlamofireUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

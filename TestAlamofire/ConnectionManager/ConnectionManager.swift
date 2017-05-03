@@ -77,67 +77,7 @@ class ConnectionManager: NSObject {
     }
     
     //MARK:- FILE_DOWNLOAD_TASK
-    class func downloadFile(urlString : String? ,fileName: String?, downloadFilePath:String?, completion: @escaping (_ result: Any?, _ error : Error?) -> Void)
-    {
-        
-        
-        /*guard self.validateURL(urlString: urlString) else {
-            completion(nil, NSError(domain: "Invalid url String", code: 0, userInfo: nil))
-
-            return
-        }*/
-
-        
-        self.getDownloadTask(urlString : urlString! ,
-                        fileName: fileName,
-                        downloadFilePath:downloadFilePath,
-                        methodType : .get,
-                        parameters:nil,
-                        headerInfo:nil,
-                        shouldStartImmediately : true,
-                        progress: nil){ (data, er) in
-                            
-                            completion(data,er)
-        }
-    }
-    
-    class func getDownloadTask(urlString : String ,
-                            fileName: String?,
-                            downloadFilePath:String?,
-                            methodType : HTTPMethod?,
-                            parameters:Dictionary<String,Any>?,
-                            headerInfo:HTTPHeaders?,
-                            shouldStartImmediately : Bool,
-                            progress: ((_ downloadProgress : Progress?)->Void)? ,
-                            completion: @escaping (_ result: Any?, _ error : Error?) -> Void) ->DownloadRequest?
-    {
-        let mType:HTTPMethod = methodType ?? .get
-        
-        let destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
-        
-        let downloadRequest = Alamofire.download(
-            urlString,
-            method: mType,
-            parameters: parameters,
-            encoding: JSONEncoding.default,
-            headers: nil,
-            to: destination)
-            .downloadProgress(closure: { (progress) in
-                
-                
-                
-            }).response(completionHandler: { (DefaultDownloadResponse) in
-                
-                completion(DefaultDownloadResponse.destinationURL,DefaultDownloadResponse.error)
-            })
-        
-        if(shouldStartImmediately)
-        {
-            downloadRequest.resume()
-        }
-        
-        return downloadRequest
-    }
+   
     
     
     // MARK:- SESSIONS

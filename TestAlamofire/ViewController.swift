@@ -38,6 +38,10 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         self.didUpdateConstraints = false
     }
     
+    class func letsTestTheFunc(str : String)->Bool
+    {
+        return false
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         

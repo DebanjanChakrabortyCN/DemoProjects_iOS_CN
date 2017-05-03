@@ -94,8 +94,7 @@ class NewsTableViewCell: UITableViewCell {
     func updateUI()-> Void{
         
         guard newsData != nil else { return }
-        
-        
+    
         self.newsTitleLabel.text = newsData?.newsTitle
         
         self.newsDescriptionLabel.text = newsData?.newsDescription
