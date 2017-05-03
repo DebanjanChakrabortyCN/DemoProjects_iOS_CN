@@ -36,7 +36,7 @@ extension String {
         
         let regexStr = "^http(?:s)?://(?:w{3}\\.)?(?!w{3}\\.)(?:[\\p{L}a-zA-Z0-9\\-]+\\.){1,}(?:[\\p{L}a-zA-Z]{2,})/(?:\\S*)?$"
         
-        return self.regexTest(regexStr: regexStr)
+        return self.regexTest(regexString: regexStr)
     }
     
     func checkValidEmail() -> Bool{
@@ -49,26 +49,24 @@ extension String {
         let regex2 = "^(?=.{1,64}@.{4,64}$)(?=.{6,100}$).*"
         
         
-        let regexTest1 : Bool = self.regexTest(regexStr: regex1)
+        let regexTest1 : Bool = self.regexTest(regexString: regex1)
+        
         
         if (regexTest1)
         {
-            let regexTest2 : Bool = self.regexTest(regexStr: regex2)
+            let regexTest2 : Bool = self.regexTest(regexString: regex2)
             
-            let checkForValidEmail : Bool = regexTest1 && regexTest2
-            
-            return checkForValidEmail
+            return regexTest2
         }
         else
         {
             return regexTest1
         }
-       
     }
     
-    func regexTest(regexStr : String)->Bool
+    func regexTest(regexString : String?)->Bool
     {
-        let urlTest = NSPredicate(format: "SELF MATCHES %@", regexStr)
+        let urlTest = NSPredicate(format: "SELF MATCHES %@", regexString!)
         
         return urlTest.evaluate(with: self)
     }

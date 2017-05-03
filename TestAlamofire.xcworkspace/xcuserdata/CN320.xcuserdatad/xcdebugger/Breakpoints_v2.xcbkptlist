@@ -30,54 +30,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestAlamofire/Strings+CustomFunctions/Strings+CustomFunctions.swift"
-            timestampString = "515497346.630918"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "checkValidEmail()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(extension in TestAlamofire):Swift.String.checkValidEmail () -&gt; Swift.Bool"
-                  moduleName = "TestAlamofire"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/CN320/Desktop/R&amp;D/TestAlamofire/TestAlamofire/Strings+CustomFunctions/Strings+CustomFunctions.swift"
-                  timestampString = "515497598.572269"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(extension in TestAlamofireTests):Swift.String.checkValidEmail () -&gt; Swift.Bool"
-                  moduleName = "TestAlamofireTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/CN320/Desktop/R&amp;D/TestAlamofire/TestAlamofire/Strings+CustomFunctions/Strings+CustomFunctions.swift"
-                  timestampString = "515497599.259587"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TestAlamofire/UserInfo/LoginUserInfo.swift"
             timestampString = "515497866.218065"
             startingColumnNumber = "9223372036854775807"

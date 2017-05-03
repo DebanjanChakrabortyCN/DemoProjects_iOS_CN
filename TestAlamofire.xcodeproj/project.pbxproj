@@ -187,7 +187,7 @@
 				7854FFD61EAA111B009E591D /* NewsTableViewCell.swift */,
 				788CDB431EB1FCC800C18383 /* Strings+CustomFunctions */,
 				788CDB551EB21A3D00C18383 /* FileManager */,
-				78CB0AEC1EB9BF5A00A01F9F /* UserInfo */,
+				78CB0AEC1EB9BF5A00A01F9F /* LoginUserInfo */,
 			);
 			path = TestAlamofire;
 			sourceTree = "<group>";
@@ -239,12 +239,12 @@
 			name = FileManager;
 			sourceTree = "<group>";
 		};
-		78CB0AEC1EB9BF5A00A01F9F /* UserInfo */ = {
+		78CB0AEC1EB9BF5A00A01F9F /* LoginUserInfo */ = {
 			isa = PBXGroup;
 			children = (
 				78CB0AE81EB9BF5600A01F9F /* LoginUserInfo.swift */,
 			);
-			name = UserInfo;
+			name = LoginUserInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
