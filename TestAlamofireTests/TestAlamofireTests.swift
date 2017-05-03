@@ -158,7 +158,7 @@ class TestAlamofireTests: XCTestCase {
         
         XCTAssertNotNil(resultCheck, "There is no data received")
         
-        print (resultCheck ?? "Kissu pelam")
+        print (resultCheck ?? "Kissu pelam na")
         
     }
     

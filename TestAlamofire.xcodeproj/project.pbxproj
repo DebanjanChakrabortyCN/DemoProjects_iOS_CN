@@ -41,6 +41,13 @@
 		789429411EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */; };
 		789429421EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */; };
 		789429431EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */; };
+		78CB0AE51EB9BE2700A01F9F /* ConnectionManager+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB0AE41EB9BE2700A01F9F /* ConnectionManager+Login.swift */; };
+		78CB0AE61EB9BE2700A01F9F /* ConnectionManager+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB0AE41EB9BE2700A01F9F /* ConnectionManager+Login.swift */; };
+		78CB0AE71EB9BE2700A01F9F /* ConnectionManager+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB0AE41EB9BE2700A01F9F /* ConnectionManager+Login.swift */; };
+		78CB0AE91EB9BF5600A01F9F /* LoginUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB0AE81EB9BF5600A01F9F /* LoginUserInfo.swift */; };
+		78CB0AEA1EB9BF5600A01F9F /* LoginUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB0AE81EB9BF5600A01F9F /* LoginUserInfo.swift */; };
+		78CB0AEB1EB9BF5600A01F9F /* LoginUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB0AE81EB9BF5600A01F9F /* LoginUserInfo.swift */; };
+		78CB0AEE1EB9C48500A01F9F /* UserInfoTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CB0AED1EB9C48500A01F9F /* UserInfoTestCases.swift */; };
 		7A5509D6487F97749A1DDF27 /* Pods_TestAlamofireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ABDAA827494274ECDA1D60 /* Pods_TestAlamofireTests.framework */; };
 		B18C7CA26762906F5EBC7D27 /* Pods_TestAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA701E3117FE4D9E4815E30D /* Pods_TestAlamofire.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +93,9 @@
 		788CDB461EB1FD2300C18383 /* ConnectionManager+FetchNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ConnectionManager+FetchNews.swift"; path = "ConnectionManager/ConnectionManager+FetchNews.swift"; sourceTree = "<group>"; };
 		788CDB511EB21A3A00C18383 /* CustomFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomFileManager.swift; path = FileManager/CustomFileManager.swift; sourceTree = "<group>"; };
 		789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ConnectionManager+DownloadTask.swift"; path = "ConnectionManager/ConnectionManager+DownloadTask.swift"; sourceTree = "<group>"; };
+		78CB0AE41EB9BE2700A01F9F /* ConnectionManager+Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ConnectionManager+Login.swift"; path = "ConnectionManager/ConnectionManager+Login.swift"; sourceTree = "<group>"; };
+		78CB0AE81EB9BF5600A01F9F /* LoginUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginUserInfo.swift; path = UserInfo/LoginUserInfo.swift; sourceTree = "<group>"; };
+		78CB0AED1EB9C48500A01F9F /* UserInfoTestCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTestCases.swift; sourceTree = "<group>"; };
 		AB7A3F1B1E37E8305ADF3D04 /* Pods-TestAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAlamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAlamofire/Pods-TestAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		BA701E3117FE4D9E4815E30D /* Pods_TestAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7ABDAA827494274ECDA1D60 /* Pods_TestAlamofireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAlamofireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +187,7 @@
 				7854FFD61EAA111B009E591D /* NewsTableViewCell.swift */,
 				788CDB431EB1FCC800C18383 /* Strings+CustomFunctions */,
 				788CDB551EB21A3D00C18383 /* FileManager */,
+				78CB0AEC1EB9BF5A00A01F9F /* UserInfo */,
 			);
 			path = TestAlamofire;
 			sourceTree = "<group>";
@@ -186,6 +197,7 @@
 			children = (
 				785B12C71EA766AF008A8433 /* TestAlamofireTests.swift */,
 				785B12C91EA766AF008A8433 /* Info.plist */,
+				78CB0AED1EB9C48500A01F9F /* UserInfoTestCases.swift */,
 			);
 			path = TestAlamofireTests;
 			sourceTree = "<group>";
@@ -214,6 +226,7 @@
 				788CDB451EB1FD2300C18383 /* ConnectionManager+CancelTask.swift */,
 				788CDB461EB1FD2300C18383 /* ConnectionManager+FetchNews.swift */,
 				789429401EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift */,
+				78CB0AE41EB9BE2700A01F9F /* ConnectionManager+Login.swift */,
 			);
 			name = ConnectionManager;
 			sourceTree = "<group>";
@@ -224,6 +237,14 @@
 				788CDB511EB21A3A00C18383 /* CustomFileManager.swift */,
 			);
 			name = FileManager;
+			sourceTree = "<group>";
+		};
+		78CB0AEC1EB9BF5A00A01F9F /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				78CB0AE81EB9BF5600A01F9F /* LoginUserInfo.swift */,
+			);
+			name = UserInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,12 +486,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				785B12B51EA766AE008A8433 /* ViewController.swift in Sources */,
+				78CB0AE51EB9BE2700A01F9F /* ConnectionManager+Login.swift in Sources */,
 				7854FFD71EAA111B009E591D /* NewsTableViewCell.swift in Sources */,
 				789429411EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */,
 				788CDB4D1EB1FD2300C18383 /* ConnectionManager+FetchNews.swift in Sources */,
 				785B12B31EA766AE008A8433 /* AppDelegate.swift in Sources */,
 				788CDB471EB1FD2300C18383 /* ConnectionManager.swift in Sources */,
 				788CDB521EB21A3A00C18383 /* CustomFileManager.swift in Sources */,
+				78CB0AE91EB9BF5600A01F9F /* LoginUserInfo.swift in Sources */,
 				788CDB4A1EB1FD2300C18383 /* ConnectionManager+CancelTask.swift in Sources */,
 				7822D67D1EA78CB500A224AA /* ArrayExtension.swift in Sources */,
 				7822D6811EA793FE00A224AA /* NewsData.swift in Sources */,
@@ -486,11 +509,14 @@
 				788CDB481EB1FD2300C18383 /* ConnectionManager.swift in Sources */,
 				788CDB4B1EB1FD2300C18383 /* ConnectionManager+CancelTask.swift in Sources */,
 				788CDB4E1EB1FD2300C18383 /* ConnectionManager+FetchNews.swift in Sources */,
+				78CB0AEA1EB9BF5600A01F9F /* LoginUserInfo.swift in Sources */,
 				7822D67E1EA78CB500A224AA /* ArrayExtension.swift in Sources */,
 				788CDB411EB1FCC400C18383 /* Strings+CustomFunctions.swift in Sources */,
 				788CDB531EB21A3A00C18383 /* CustomFileManager.swift in Sources */,
+				78CB0AEE1EB9C48500A01F9F /* UserInfoTestCases.swift in Sources */,
 				7854FFD81EAA111B009E591D /* NewsTableViewCell.swift in Sources */,
 				789429421EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */,
+				78CB0AE61EB9BE2700A01F9F /* ConnectionManager+Login.swift in Sources */,
 				785B12C81EA766AF008A8433 /* TestAlamofireTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,11 +529,13 @@
 				788CDB491EB1FD2300C18383 /* ConnectionManager.swift in Sources */,
 				788CDB4C1EB1FD2300C18383 /* ConnectionManager+CancelTask.swift in Sources */,
 				788CDB4F1EB1FD2300C18383 /* ConnectionManager+FetchNews.swift in Sources */,
+				78CB0AEB1EB9BF5600A01F9F /* LoginUserInfo.swift in Sources */,
 				7822D67F1EA78CB500A224AA /* ArrayExtension.swift in Sources */,
 				788CDB421EB1FCC400C18383 /* Strings+CustomFunctions.swift in Sources */,
 				788CDB541EB21A3A00C18383 /* CustomFileManager.swift in Sources */,
 				7854FFD91EAA111B009E591D /* NewsTableViewCell.swift in Sources */,
 				789429431EB8A2E500B7E35D /* ConnectionManager+DownloadTask.swift in Sources */,
+				78CB0AE71EB9BE2700A01F9F /* ConnectionManager+Login.swift in Sources */,
 				785B12D31EA766AF008A8433 /* TestAlamofireUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

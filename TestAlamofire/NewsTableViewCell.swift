@@ -101,7 +101,7 @@ class NewsTableViewCell: UITableViewCell {
         
         let newsAuthor = newsData?.newsAuthor
         
-        if((newsAuthor?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).characters.count) != nil)
+        if(newsAuthor?.getFullyTrimmedStringLength()/*(newsAuthor?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).characters.count)*/ != nil)
         {
             self.newsAuthorLabel.text = String("By : " + newsAuthor!)
         }

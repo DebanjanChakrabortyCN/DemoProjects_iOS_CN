@@ -60,7 +60,7 @@ class NewsData: NSObject {
         fatalError("init(coder:) has not been implemented")
     }
     
-    internal convenience init(dataDictionary : Dictionary<String, Any>) {
+    private convenience init(dataDictionary : Dictionary<String, Any>) {
         
         self.init()
         self.newsTitle = dataDictionary["title"] as? String
@@ -85,7 +85,7 @@ class NewsData: NSObject {
     {
         guard publishedDate != nil else { return }
         
-        let stringLength = publishedDate!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).characters.count
+        let stringLength = publishedDate!.getFullyTrimmedStringLength()//trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).characters.count
         
         guard stringLength > 0 else { return }
         
